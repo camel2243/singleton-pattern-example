@@ -24,3 +24,7 @@ Ref: https://stackoverflow.com/questions/36887344/why-singleton-breaks-open-clos
 ```
 npx jest --verbose tests/Song.test.js
 ```
+
+### 參考答案
+
+我自己的理解與解法，請參考 [此branch](https://github.com/camel2243/singleton-pattern-example/tree/my-answer)
