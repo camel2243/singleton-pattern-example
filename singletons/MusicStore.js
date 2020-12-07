@@ -6,13 +6,21 @@ const singleton = Symbol('singleton');
 module.exports = class MusicStore {
   // singleton.instance
   static get instance() {
-    this[singleton] = new this;
+    if (!this[singleton]) {
+      this[singleton] = new this;
+    }
 
     return this[singleton];
   }
   // new singleton()
   constructor() {
+    const klass = this.constructor;
 
+    if (!klass[singleton]) {
+      klass[singleton] = this;
+    }
+
+    return klass[singleton];
   }
 
   // configuration
