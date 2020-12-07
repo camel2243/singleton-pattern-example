@@ -20,3 +20,9 @@ Ref: https://stackoverflow.com/questions/137975/what-is-so-bad-about-singletons
 Ref: https://stackoverflow.com/questions/36887344/why-singleton-breaks-open-closed-principle
 
 * `Song.js` 有沒有可能怎麼樣改寫會比較容易測試或是減少測試的耦合性? e.g. dependency injection?
+
+執行指令：
+
+```
+npx jest --verbose tests/Song.test.js
+```
